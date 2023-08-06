@@ -1,0 +1,36 @@
+## Docker commands used to build the application 
+# TODO: insert the docker build command
+
+docker build -t techtrends/techtrends .
+
+## Docker commands used to run the application
+# TODO: insert the docker run command
+
+docker run -d -p 7111:3111 --name techtrends techtrends/techtrends
+
+## Docker commands used to get the application logs
+# TODO: insert the docker logs command
+
+docker logs -f techtrends
+
+## Logs from the container running the TechTrends application
+# TODO: paste logs from the Docker container
+INFO:werkzeug: * Running on http://172.17.0.2:3111/ (Press CTRL+C to quit)
+INFO:werkzeug:172.17.0.1 - - [05/Aug/2023 14:50:49] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:172.17.0.1 - - [05/Aug/2023 14:50:49] "GET /static/css/main.css HTTP/1.1" 200 -
+INFO:werkzeug:172.17.0.1 - - [05/Aug/2023 14:50:49] "GET /favicon.ico HTTP/1.1" 404 -
+INFO:app:08/05/2023 14:50:56 - About Us
+INFO:werkzeug:172.17.0.1 - - [05/Aug/2023 14:50:56] "GET /about HTTP/1.1" 200 -
+INFO:werkzeug:172.17.0.1 - - [05/Aug/2023 14:50:58] "GET /static/css/main.css HTTP/1.1" 304 -
+INFO:werkzeug:172.17.0.1 - - [05/Aug/2023 14:51:03] "GET /create HTTP/1.1" 200 -
+INFO:werkzeug:172.17.0.1 - - [05/Aug/2023 14:51:03] "GET /static/css/main.css HTTP/1.1" 304 -
+INFO:app:08/05/2023 14:51:17 - Article New Docker Post created
+INFO:werkzeug:172.17.0.1 - - [05/Aug/2023 14:51:17] "POST /create HTTP/1.1" 302 -
+INFO:werkzeug:172.17.0.1 - - [05/Aug/2023 14:51:17] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:172.17.0.1 - - [05/Aug/2023 14:51:18] "GET /static/css/main.css HTTP/1.1" 304 -
+INFO:app:08/05/2023 14:51:21 - Article New Docker Post found
+INFO:werkzeug:172.17.0.1 - - [05/Aug/2023 14:51:21] "GET /7 HTTP/1.1" 200 -
+INFO:werkzeug:172.17.0.1 - - [05/Aug/2023 14:51:22] "GET /static/css/main.css HTTP/1.1" 304 -
+INFO:app:08/05/2023 14:51:36 - Article Not Found
+INFO:werkzeug:172.17.0.1 - - [05/Aug/2023 14:51:36] "GET /70 HTTP/1.1" 404 -
+INFO:werkzeug:172.17.0.1 - - [05/Aug/2023 14:51:36] "GET /static/css/main.css HTTP/1.1" 304 -

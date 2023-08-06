@@ -1,0 +1,7 @@
+.github
+.venv
+argocd
+helm
+kubernetes
+screenshots
+Vagrantfile
