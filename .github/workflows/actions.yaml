@@ -25,5 +25,5 @@ jobs:
           file: ./Dockerfile
           platforms: linux/amd64
           push: true
-          tags: ebayskb/techtrends:latest, ebayskb/techtrends:1.0.0
-          
+          tags: dockeruser8623/techtrends:latest, dockeruser8623/techtrends:1.0.0
+
