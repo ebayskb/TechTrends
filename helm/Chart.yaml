@@ -1,0 +1,9 @@
+apiVersion: v1
+name: techtrends
+description: techtrends project deployment
+keywords: 
+  - techtrends
+version: 1.0.0
+maintainers: 
+  - name: tig
+    email: ebayskb@gmail.com
