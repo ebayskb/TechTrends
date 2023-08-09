@@ -1,5 +1,6 @@
 import sqlite3
 import logging
+import sys
 from datetime import datetime
 
 from flask import Flask, jsonify, json, render_template, request, url_for, redirect, flash
@@ -102,4 +103,6 @@ def log(message):
 # start the application on port 3111
 if __name__ == "__main__":
    logging.basicConfig(level=logging.DEBUG)
+   handler = logging.StreamHandler(sys.stdout)
+   app.logger.addHandler(handler)
    app.run(host='0.0.0.0', port='3111')

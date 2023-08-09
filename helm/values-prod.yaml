@@ -5,11 +5,10 @@ service:
 replicas: 5
 resources:
   requests:
-    memory: "128Mi"
-    cpu: "350m"
+    memory: 128Mi
+    cpu: 350m
   limits:
-    requests:
-    memory: "256Mi"
-    cpu: "500m"
+    memory: 256Mi
+    cpu: 500m
 image:
   pullPolicy: Always
